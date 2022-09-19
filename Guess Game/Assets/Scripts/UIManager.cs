@@ -23,23 +23,12 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Game Manager on UI Manager is <null>");
         }
 
-        //gameOverText.gameObject.SetActive(false);
-        //restartText.gameObject.SetActive(false);
         predictionLimitText.text = "Tahmin Hakkı    : ";
         predictionNoText.text = "Tahmin No          : ";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GameOverSequence()
     {
-        //_gameManager.GameOver();
-        //gameOverText.gameObject.SetActive(true);
-        //restartText.gameObject.SetActive(true);
         StartCoroutine(GameOverFlickerRoutine());
     }
 
@@ -52,16 +41,6 @@ public class UIManager : MonoBehaviour
             gameOverText.text = "";
             yield return new WaitForSeconds(0.5f);
         }
-    }
-
-    public void HideInPause()
-    {
-        Debug.Log("Hide in pause deneme");
-    }
-
-    public void ShowOutPause()
-    {
-        Debug.Log("Show out pause deneme");
     }
     
     public void UpdatePrediction(int guess)

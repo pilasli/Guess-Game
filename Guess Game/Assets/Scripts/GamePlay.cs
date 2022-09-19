@@ -39,17 +39,9 @@ public class GamePlay : MonoBehaviour
         }
 
         _savePrefs.LoadGame();
-
         guessRight = _savePrefs.sliderValueToSave; 
-
         Guess();
         _uiManager.UpdatePredictionLimit(guessRight);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void Increase()
@@ -72,16 +64,11 @@ public class GamePlay : MonoBehaviour
             topLimit = guess;
             Guess();
         }
-        else
-        {
-
-        }
     }
 
     public void Correct()
     {
         _gameManager.GameOver();
-
         if(guessNumber > guessRight)
         {
             _uiManager.UpdateWinLose("Oyunu siz kazandınız");
@@ -102,6 +89,5 @@ public class GamePlay : MonoBehaviour
         guess = randomInt;
         _uiManager.UpdatePrediction(guess);
         Debug.Log("downlimit= " + downLimit + ", toplimit= " + topLimit + ", guess= " + guess);
-        //Debug.Log(guess);
     }
 }

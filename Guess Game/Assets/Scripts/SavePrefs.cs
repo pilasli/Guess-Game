@@ -8,7 +8,6 @@ public class SavePrefs : MonoBehaviour
 
     public void SaveGame()
     {
-
         PlayerPrefs.SetFloat("SavedSliderValue", sliderValueToSave);
         PlayerPrefs.Save();
         Debug.Log("Game data saved!");

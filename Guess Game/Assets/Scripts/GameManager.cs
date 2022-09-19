@@ -44,8 +44,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-
     public void GameOver()
     {
         Debug.Log("GameManager::GameOver() called");
@@ -55,33 +53,26 @@ public class GameManager : MonoBehaviour
         _uiManager.GameOverSequence();   
     }
     
-
     public void PauseGame()
     {
-        Debug.Log("Game is paused");
-        _uiManager.HideInPause(); // Buna gerek olamayabilir       
+        Debug.Log("Game is paused");     
         pauseMenuPanel.SetActive(true);
         isGamePaused = true;
-        //Time.timeScale = 0f; // Buna gerek olmayabilir, çünkü devam eden bir şey yok
     }
 
     public void ResumeGame()
     {
         Debug.Log("Game is resumed");
         if(pauseMenuPanel.activeSelf)
-        {
-            
+        {           
             pauseMenuPanel.SetActive(false);
-            _uiManager.ShowOutPause();  // Buna gerek olmayabilir
-            isGamePaused = false;
-            //Time.timeScale = 1.0f;  // Buna gerek olmayabilir, PauseGame() kısmında silersek burada da sil           
+            isGamePaused = false;         
         }
     }
 
     public void GoMainMenu()
     {
         Debug.Log("Going main manu");
-        //Time.timeScale = 1.0f; // Öncekilerde olduğu gibi, diğerlerini silersen bunu da sil
         SceneManager.LoadScene("Main_Menu");
     }
 

@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject _slider;
-
     public void LoadGame()
     {
         Debug.Log("Game is Loading...");

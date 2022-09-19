@@ -16,6 +16,7 @@ public class SliderValue : MonoBehaviour
         slider = GetComponentInParent<Slider>();
         textComp = GetComponent<Text>();        
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,12 +29,6 @@ public class SliderValue : MonoBehaviour
         slider.value = _savePrefs.sliderValueToSave;
         UpdateText(slider.value);
         slider.onValueChanged.AddListener(UpdateText);        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void UpdateText(float val)
