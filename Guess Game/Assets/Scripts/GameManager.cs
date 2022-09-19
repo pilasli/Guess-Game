@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R) && isGameOver == true)
         {
-            SceneManager.LoadScene("Game");
+            RestartGame();
         }
 
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -80,5 +80,10 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Leaving game to windows");
         Application.Quit();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Game");        
     }
 }

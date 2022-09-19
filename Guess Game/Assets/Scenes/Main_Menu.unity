@@ -722,7 +722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: 132}
+  m_AnchoredPosition: {x: -260, y: 132}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323110892
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1711706093}
   m_Direction: 2
   m_MinValue: 5
-  m_MaxValue: 50
+  m_MaxValue: 20
   m_WholeNumbers: 1
   m_Value: 10
   m_OnValueChanged:
@@ -1402,6 +1402,7 @@ MonoBehaviour:
   normalCursorHotSpot: {x: 14, y: 12}
   cursorOnButton: {fileID: 2800000, guid: 25ea409a8ef377c439ff3b3c433ff301, type: 3}
   onButtonCursorHotSpot: {x: 28, y: 4}
+  restartButtonText: {fileID: 0}
 --- !u!4 &1015391015
 Transform:
   m_ObjectHideFlags: 0
@@ -2237,7 +2238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50c11f60946aa843891be5320fe1082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slider: {fileID: 424991452}
 --- !u!4 &1248966520
 Transform:
   m_ObjectHideFlags: 0
@@ -2397,10 +2397,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Akl\u0131n\u0131zdan bir say\u0131 tutun ve bilgisayar\u0131n tahmini
-    do\u011Fru oldu\u011Funda do\u011Fru tu\u015Funa bas\u0131n.\n\nBilgisayar belirledi\u011Finiz
-    limitten daha fazla say\u0131da tahmin ile akl\u0131n\u0131zdaki say\u0131y\u0131
-    bulursa kazan\u0131rs\u0131n\u0131z."
+  m_Text: "Akl\u0131n\u0131zdan 1 ile 1000 aras\u0131nda bir say\u0131 tutun ve bilgisayar\u0131n
+    tahmini do\u011Fru oldu\u011Funda do\u011Fru tu\u015Funa bas\u0131n.\n\nBilgisayar
+    belirledi\u011Finiz limitten daha fazla say\u0131da tahmin ile akl\u0131n\u0131zdaki
+    say\u0131y\u0131 bulursa kazan\u0131rs\u0131n\u0131z.\n\nESC ile duraklat men\xFCs\xFC
+    a\xE7\u0131lmaktad\u0131r."
 --- !u!222 &1295368094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2426,7 +2427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1377771262
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3302,7 +3303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 50
+  m_Text: 20
 --- !u!222 &1801113208
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -265,7 +266,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: f25ad577a5c67f8ad30df43a9fb6113d
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
@@ -721,7 +722,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 02078fd860eb590273260bacfbf59d56
+      Hash: c74ae0363d0078c48e94ea83d3037f2c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CursorManager
@@ -735,5 +736,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main_Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/murat/Unity Projects/Guess Game/WindowsPlayableBuilt/Guess
-    Game.exe
+  playerPath: C:/Users/murat/Unity Playable Games/Guess Game - WindowsPlayableBuilt
+    v1.1/Guess Game.exe

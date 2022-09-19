@@ -5,7 +5,7 @@ using UnityEngine;
 public class GamePlay : MonoBehaviour
 {
     private int guess;
-    private int downLimit = 0;
+    private int downLimit = 1;
     private int topLimit = 1001;
     private float guessRight = 10;
     private int guessNumber = 0;
